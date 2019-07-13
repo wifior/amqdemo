@@ -1,0 +1,12 @@
+spring:
+  activemq:
+    broker-url: tcp://localhost:61616    # 配置 activeMQ 服务器信息
+    user: admin
+    password: admin
+activemq:
+  topic: T_Topic1
+  queue: Q_Queue1
+  virtual:
+    topic: VirtualTopic.Topic1
+      A: Consumer.A.VirtualTopic.Topic1
+      B: Consumer.B.VirtualTopic.Topic1
